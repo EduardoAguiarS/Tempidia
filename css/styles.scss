@@ -1,6 +1,6 @@
 // Imports
 @import "./variables";
-@import "./remcalc";
+@import "./functions";
 @import "./reset";
 
 // Default
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: titleFontFamily;
+  font-family: $titleFontFamily;
 }
 
 // Header

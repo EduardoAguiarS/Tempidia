@@ -1,4 +1,7 @@
+// Rem Calc
 @function remCalc($size) {
   $value: $size / 16;
   @return #{$value}rem;
 }
+
+// Flex Center
