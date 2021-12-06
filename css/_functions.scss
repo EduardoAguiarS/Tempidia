@@ -5,3 +5,15 @@
 }
 
 // Flex Center
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Flex Modular
+@mixin flexModular($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
