@@ -1,0 +1,33 @@
+// Imports
+@import "./variables";
+@import "./remcalc";
+@import "./reset";
+
+// Default
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $textFontFamily;
+
+  background: $primaryColor;
+}
+
+// Title Font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: titleFontFamily;
+}
+
+// Header
+
+// Main
+main {
+  max-width: remCalc(1200);
+  margin: 0 auto;
+}
