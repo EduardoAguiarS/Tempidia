@@ -4,13 +4,102 @@
 @import "./reset";
 
 // Default
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: $textFontFamily;
 
+  background: $primaryColor;
+}
+
+// Buttons
+.btn-lg {
+  background: $secondaryColor;
+
+  font-family: $titleFontFamily;
+  font-size: remCalc($btnLgSize);
+  font-weight: remCalc($btnLgWeight);
+  line-height: remCalc($btnLgLineHeight);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+
+  color: $white;
+
+  max-width: remCalc(290);
+  width: 100%;
+
+  clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+
+  -webkit-clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+}
+.btn-sm {
+  background: $secondaryColor;
+
+  font-family: $titleFontFamily;
+  font-size: remCalc($btnSmSize);
+  font-weight: remCalc($btnSmWeight);
+  line-height: remCalc($btnSmLineHeight);
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $white;
+
+  display: inline-block;
+  min-width: remCalc(130);
+
+  clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+
+  -webkit-clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+}
+
+.btn-secondaryColor {
   background: $primaryColor;
 }
 

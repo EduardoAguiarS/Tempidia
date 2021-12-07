@@ -133,13 +133,47 @@ table {
   border-spacing: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+a {
+  text-decoration: none;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: #36314f;
+}
+
+.btn-lg {
+  background: #faa34a;
+  font-family: "Passion One", cursive;
+  font-size: 1.5rem;
+  font-weight: 25rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: white;
+  max-width: 18.125rem;
+  width: 100%;
+  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+}
+
+.btn-sm {
+  background: #faa34a;
+  font-family: "Passion One", cursive;
+  font-size: 1.125rem;
+  font-weight: 25rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  min-width: 8.125rem;
+  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+}
+
+.btn-secondaryColor {
   background: #36314f;
 }
 
