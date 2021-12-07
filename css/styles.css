@@ -383,8 +383,8 @@ main {
 
 .tempedia .tempedia-container .temtem-card .temtem-portrait img {
   width: 250px;
-  -webkit-filter: drop-shadow(0 0 5px black);
-          filter: drop-shadow(0 0 5px black);
+  -webkit-filter: drop-shadow(0 0 2px black);
+          filter: drop-shadow(0 0 2px black);
   -webkit-clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
   clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
 }
