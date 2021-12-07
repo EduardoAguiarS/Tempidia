@@ -7,7 +7,7 @@
 body {
   font-family: $textFontFamily;
 
-  background: $darkPrimary;
+  background: $bgPrimary;
 }
 
 // Buttons
@@ -50,7 +50,7 @@ body {
   transition: all 0.2s ease;
 
   &:hover {
-    background: $lightSecondary;
+    background: $bgPrimary;
     transform: translateY(remCalc(-5));
   }
 }
@@ -86,6 +86,23 @@ h4,
 h5,
 h6 {
   font-family: $titleFontFamily;
+  color: $secondaryColor;
+}
+
+h1 {
+  font-size: remCalc($h1Size);
+  font-weight: remCalc($h1Weight);
+  line-height: remCalc($h1LineHeight);
+  letter-spacing: remCalc(0.2);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: remCalc($h2Size);
+  font-weight: remCalc($h2Weight);
+  line-height: remCalc($h2LineHeight);
+  letter-spacing: remCalc(0.2);
+  text-transform: uppercase;
 }
 
 // Header
@@ -94,18 +111,13 @@ h6 {
   @include flexModular(space-between, center);
   position: fixed;
   width: 100%;
-
   z-index: 100;
-
   padding: remCalc(20) 0;
-
-  background: $primaryColor;
-
+  background: $white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid $secondaryColor;
 
-  border-radius: 0 0 25px 25px;
-
-  border-bottom: 1px solid $lightPrimary;
+  background-image: url("");
 
   // Logo
   .logo {
@@ -130,7 +142,7 @@ h6 {
     }
 
     a {
-      color: $white;
+      color: $secondaryColor;
 
       font-family: $titleFontFamily;
       font-size: remCalc($h2Size);
@@ -143,7 +155,7 @@ h6 {
       transition: all 0.2s ease;
 
       &:hover {
-        color: $secondaryColor;
+        color: $bgPrimary;
         transform: translateY(remCalc(-2));
       }
     }
@@ -160,4 +172,112 @@ main {
   max-width: remCalc(1200);
   margin: 0 auto;
   position: relative;
+  top: remCalc(120);
+}
+
+//Tempedia
+.tempedia {
+  padding: remCalc(60) remCalc(20);
+
+  // Title
+  h1 {
+    color: $white;
+    text-align: center;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  // Temtem infos
+  .tempedia-container {
+    position: relative;
+    height: remCalc(800);
+    background-color: $lightSecondary;
+    margin-top: 2rem;
+
+    .img-bottom {
+      position: absolute;
+      z-index: 3;
+      bottom: remCalc(-30);
+      right: remCalc(-10);
+    }
+
+    form {
+      text-align: center;
+      padding-top: 2rem;
+
+      input {
+        display: inline-block;
+        margin: remCalc(10) auto;
+
+        padding: 0.6rem 1rem;
+
+        border: none;
+        border-radius: 5px;
+
+        font-family: $textFontFamily;
+        font-weight: 700;
+        color: $white;
+
+        outline: none;
+
+        border: solid 3px transparent;
+
+        transition: all 0.2s ease;
+
+        &:focus {
+          border: solid 3px $secondaryColor;
+          background: $bgPrimary;
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+          transform: translateY(-2px);
+        }
+      }
+
+      label {
+        display: block;
+
+        font-family: $titleFontFamily;
+        font-size: remCalc(24);
+        font-weight: $h2Weight;
+        text-transform: uppercase;
+
+        color: $secondaryColor;
+      }
+
+      .btn-sm {
+        background: $secondaryColor;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-left: remCalc(5);
+      }
+    }
+  }
+
+  // Clip Path
+  clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+
+  -webkit-clip-path: polygon(
+    0 18%,
+    0 33%,
+    2.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
 }

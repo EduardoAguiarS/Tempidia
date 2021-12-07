@@ -17,8 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Passion+One:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Script -->
+    <script src="./js/app.js" tyo="text/javascript" defer></script>
   </head>
   <body>
+    <!-- Header -->
     <header class="menu-header">
       <a href="#"
         ><img src="./assets/temtem.png" alt="Temtem" class="logo"
@@ -29,13 +32,37 @@
           <a href="#"><li>Types</li></a>
           <a href="#"><li>Matchups</li></a>
           <a href="#"><li>Tempedia</li></a>
+          <a href="#"><li>About</li></a>
         </ul>
       </nav>
 
       <a href="#" class="btn-lg buy">Buy Now</a>
     </header>
-    <main></main>
-    <!-- Script -->
-    <script src="./js/app.js"></script>
+
+    <!-- Main -->
+    <main>
+      <!-- Tempedia -->
+      <section class="tempedia">
+        <h1>Tempedia</h1>
+        <div class="tempedia-container">
+          <img
+            class="img-bottom"
+            src="http://sm.ign.com/ign_br/screenshot/default/a1d981f918316cd0430c91a2b9078208-original_t4fe.png"
+            alt=""
+          />
+
+          <form action="" onsubmit="searchTemtem(event)">
+            <label for="temtemSearch">Search Temtem</label>
+            <input
+              type="text"
+              name="temtem"
+              id="temtemSearch"
+              autocomplete="off"
+            />
+            <button class="btn-sm">Search</button>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

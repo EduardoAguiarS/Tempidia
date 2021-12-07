@@ -139,13 +139,13 @@ a {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #291736;
+  background: #e94444;
 }
 
 .btn-lg,
 .btn-sm {
   background: #faa34a;
-  color: white;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   font-family: "Passion One", cursive;
@@ -157,7 +157,7 @@ body {
 
 .btn-lg:hover,
 .btn-sm:hover {
-  background: #e8b056;
+  background: #e94444;
   -webkit-transform: translateY(-0.3125rem);
           transform: translateY(-0.3125rem);
 }
@@ -190,6 +190,23 @@ h4,
 h5,
 h6 {
   font-family: "Passion One", cursive;
+  color: #faa34a;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 43.75rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.0125rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 43.75rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.0125rem;
+  text-transform: uppercase;
 }
 
 .menu-header {
@@ -206,11 +223,11 @@ h6 {
   width: 100%;
   z-index: 100;
   padding: 1.25rem 0;
-  background: #36314f;
+  background: #ffffff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 25px 25px;
-  border-bottom: 1px solid #855b80;
+  border-bottom: 2px solid #faa34a;
+  background-image: url("");
 }
 
 .menu-header .logo {
@@ -244,9 +261,9 @@ h6 {
 }
 
 .menu-header nav ul a {
-  color: white;
+  color: #faa34a;
   font-family: "Passion One", cursive;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 43.75rem;
   text-transform: uppercase;
   letter-spacing: 0.01875rem;
@@ -255,7 +272,7 @@ h6 {
 }
 
 .menu-header nav ul a:hover {
-  color: #faa34a;
+  color: #e94444;
   -webkit-transform: translateY(-0.125rem);
           transform: translateY(-0.125rem);
 }
@@ -268,5 +285,78 @@ main {
   max-width: 75rem;
   margin: 0 auto;
   position: relative;
+  top: 7.5rem;
+}
+
+.tempedia {
+  padding: 3.75rem 1.25rem;
+  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-clip-path: polygon(0 18%, 0 33%, 2.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+}
+
+.tempedia h1 {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tempedia .tempedia-container {
+  position: relative;
+  height: 50rem;
+  background-color: #ffe5b6;
+  margin-top: 2rem;
+}
+
+.tempedia .tempedia-container .img-bottom {
+  position: absolute;
+  z-index: 3;
+  bottom: -1.875rem;
+  right: -0.625rem;
+}
+
+.tempedia .tempedia-container form {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.tempedia .tempedia-container form input {
+  display: inline-block;
+  margin: 0.625rem auto;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  outline: none;
+  border: solid 3px transparent;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.tempedia .tempedia-container form input:focus {
+  border: solid 3px #faa34a;
+  background: #e94444;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.tempedia .tempedia-container form label {
+  display: block;
+  font-family: "Passion One", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #faa34a;
+}
+
+.tempedia .tempedia-container form .btn-sm {
+  background: #faa34a;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.3125rem;
 }
 /*# sourceMappingURL=styles.css.map */
