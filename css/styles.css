@@ -359,4 +359,33 @@ main {
   cursor: pointer;
   margin-left: 0.3125rem;
 }
+
+.tempedia .tempedia-container .temtem-card {
+  margin: 2rem 3rem;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-portrait {
+  background: url(../assets/Temtem_portrait_background.png) no-repeat 100%/100%;
+  width: 15.625rem;
+  height: 15.625rem;
+  position: relative;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-portrait:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(../assets/Temtem_portrait_border.png) no-repeat;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-portrait img {
+  width: 250px;
+  -webkit-filter: drop-shadow(0 0 5px black);
+          filter: drop-shadow(0 0 5px black);
+  -webkit-clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
+  clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
+}
 /*# sourceMappingURL=styles.css.map */
