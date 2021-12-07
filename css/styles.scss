@@ -112,37 +112,41 @@ h2 {
   position: fixed;
   width: 100%;
   z-index: 100;
-  padding: remCalc(20) 0;
-  background: $white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid $secondaryColor;
+  padding: remCalc(15) 0;
 
-  background-image: url("");
+  background-image: url(../assets/header.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
 
   // Logo
   .logo {
     display: block;
-    width: remCalc(180);
-    margin-left: remCalc(60);
+
+    max-width: remCalc(200);
 
     transition: all 0.2s ease;
 
-    &:hover {
-      transform: translateY(remCalc(-3));
-    }
+    margin-left: remCalc(30);
+
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
   }
 
   // Navbar
   nav ul {
-    @include flexModular(space-between, center);
-
-    li {
-      margin: 0 remCalc(10);
-      padding: remCalc(10);
-    }
+    display: flex;
+    align-items: center;
 
     a {
-      color: $secondaryColor;
+      margin: 0 remCalc(10);
+      padding: remCalc(5);
+
+      color: $white;
 
       font-family: $titleFontFamily;
       font-size: remCalc($h2Size);
@@ -155,7 +159,7 @@ h2 {
       transition: all 0.2s ease;
 
       &:hover {
-        color: $bgPrimary;
+        color: $primaryColor;
         transform: translateY(remCalc(-2));
       }
     }
@@ -163,7 +167,9 @@ h2 {
 
   // Buy Btn
   .buy {
-    margin-right: remCalc(60);
+    margin-right: remCalc(30);
+    background: $primaryColor;
+    color: $white;
   }
 }
 
@@ -225,7 +231,6 @@ main {
 
         &:focus {
           border: solid 3px $secondaryColor;
-          background: $bgPrimary;
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
           transform: translateY(-2px);
         }
@@ -262,6 +267,8 @@ main {
         width: remCalc(250);
         height: remCalc(250);
 
+        text-align: center;
+
         position: relative;
 
         &:before {
@@ -294,6 +301,43 @@ main {
             50% 92%,
             14% 72%,
             12% 29%
+          );
+        }
+
+        h2 {
+          background: $bgPrimary;
+          max-width: 100%;
+          width: 250px;
+          margin: 0 auto;
+          padding: 1rem 0.3rem;
+          color: $white;
+
+          clip-path: polygon(
+            0 3%,
+            0 33%,
+            1.5% 45%,
+            2% 99%,
+            53% 97%,
+            100% 100%,
+            99.5% 70%,
+            98% 44%,
+            99% 1%,
+            65% 3%,
+            36% 1%
+          );
+
+          -webkit-clip-path: polygon(
+            0 3%,
+            0 33%,
+            1.5% 45%,
+            2% 99%,
+            53% 97%,
+            100% 100%,
+            99.5% 70%,
+            98% 44%,
+            99% 1%,
+            65% 3%,
+            36% 1%
           );
         }
       }

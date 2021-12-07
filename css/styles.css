@@ -222,46 +222,45 @@ h2 {
   position: fixed;
   width: 100%;
   z-index: 100;
-  padding: 1.25rem 0;
-  background: #ffffff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid #faa34a;
-  background-image: url("");
+  padding: 0.9375rem 0;
+  background-image: url(../assets/header.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
 }
 
 .menu-header .logo {
   display: block;
-  width: 11.25rem;
-  margin-left: 3.75rem;
+  max-width: 12.5rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  margin-left: 1.875rem;
+  position: relative;
 }
 
-.menu-header .logo:hover {
-  -webkit-transform: translateY(-0.1875rem);
-          transform: translateY(-0.1875rem);
+.menu-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.menu-header nav ul li {
-  margin: 0 0.625rem;
-  padding: 0.625rem;
-}
-
 .menu-header nav ul a {
-  color: #faa34a;
+  margin: 0 0.625rem;
+  padding: 0.3125rem;
+  color: #ffffff;
   font-family: "Passion One", cursive;
   font-size: 1.5rem;
   font-weight: 43.75rem;
@@ -272,13 +271,15 @@ h2 {
 }
 
 .menu-header nav ul a:hover {
-  color: #e94444;
+  color: #36314f;
   -webkit-transform: translateY(-0.125rem);
           transform: translateY(-0.125rem);
 }
 
 .menu-header .buy {
-  margin-right: 3.75rem;
+  margin-right: 1.875rem;
+  background: #36314f;
+  color: #ffffff;
 }
 
 main {
@@ -336,7 +337,6 @@ main {
 
 .tempedia .tempedia-container form input:focus {
   border: solid 3px #faa34a;
-  background: #e94444;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateY(-2px);
@@ -368,6 +368,7 @@ main {
   background: url(../assets/Temtem_portrait_background.png) no-repeat 100%/100%;
   width: 15.625rem;
   height: 15.625rem;
+  text-align: center;
   position: relative;
 }
 
@@ -387,5 +388,16 @@ main {
           filter: drop-shadow(0 0 2px black);
   -webkit-clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
   clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-portrait h2 {
+  background: #e94444;
+  max-width: 100%;
+  width: 250px;
+  margin: 0 auto;
+  padding: 1rem 0.3rem;
+  color: #ffffff;
+  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
 }
 /*# sourceMappingURL=styles.css.map */
