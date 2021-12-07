@@ -195,7 +195,7 @@ h6 {
 
 h1 {
   font-size: 3.5rem;
-  font-weight: 43.75rem;
+  font-weight: 700;
   line-height: 2.25rem;
   letter-spacing: 0.0125rem;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 43.75rem;
+  font-weight: 7 700;
   line-height: 1.4375rem;
   letter-spacing: 0.0125rem;
   text-transform: uppercase;
@@ -301,11 +301,25 @@ main {
   text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.tempedia p {
+  font-size: 1rem;
+  color: #faa34a;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.625rem;
+  text-transform: uppercase;
+}
+
 .tempedia .tempedia-container {
   position: relative;
   height: 50rem;
   background-color: #ffe5b6;
   margin-top: 2rem;
+}
+
+.tempedia .tempedia-container p {
+  text-transform: none;
+  color: #e94444;
 }
 
 .tempedia .tempedia-container .img-bottom {

@@ -3,8 +3,17 @@ const searchButton = document.getElementById("searchButton");
 const temtemImg = document.getElementById("temtemImg");
 const temtemName = document.getElementById("temtemName");
 
-function searchTemtem() {
+searchButton.addEventListener("click", searchTemtem);
+
+function temtemApi() {
   let urlApi = `https://temtem-api.mael.tech/api/temtems`;
+  return urlApi;
+}
+
+function searchTemtem(event) {
+  event.preventDefault();
+  let temtemNumber = 0;
+  urlApi = temtemApi();
 
   fetch(urlApi)
     .then(response => response.json())
@@ -13,14 +22,20 @@ function searchTemtem() {
         if (
           temtem.name.toLowerCase() ===
             temtemSearch.value.toLowerCase().trim() ||
-          temtem.number == temtemSearch.value
+          temtem.number == temtemSearch.value.trim()
         ) {
           urlApi = `https://temtem-api.mael.tech/api/temtems/${temtem.number}`;
           temtemImg.src = `https://temtem-api.mael.tech/images/portraits/temtem/large/${temtem.name}.png`;
           temtemName.textContent = temtem.name;
+
+          temtemNumber = temtem.number;
+          errorSearch.textContent = "";
         }
       });
+      if (
+        urlApi != `https://temtem-api.mael.tech/api/temtems/${temtemNumber}`
+      ) {
+        errorSearch.textContent = `Temtem "${temtemSearch.value}" is not available!`;
+      }
     });
 }
-
-searchButton.addEventListener("click", searchTemtem);

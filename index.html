@@ -43,7 +43,10 @@
     <main>
       <!-- Tempedia -->
       <section class="tempedia">
-        <h1>Tempedia</h1>
+        <div class="title">
+          <h1>Tempedia</h1>
+          <p>Search Temtems by name or number</p>
+        </div>
         <div class="tempedia-container">
           <img
             class="img-bottom"
@@ -51,7 +54,7 @@
             alt=""
           />
 
-          <form>
+          <form onSubmit="searchTemtem(event)">
             <label for="temtemSearch">Search Temtem</label>
             <input
               type="text"
@@ -63,6 +66,7 @@
               Search
             </button>
           </form>
+          <p id="errorSearch"></p>
 
           <div class="temtem-card">
             <div class="temtem-portrait">

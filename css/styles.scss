@@ -91,7 +91,7 @@ h6 {
 
 h1 {
   font-size: remCalc($h1Size);
-  font-weight: remCalc($h1Weight);
+  font-weight: $h2Weight;
   line-height: remCalc($h1LineHeight);
   letter-spacing: remCalc(0.2);
   text-transform: uppercase;
@@ -99,7 +99,7 @@ h1 {
 
 h2 {
   font-size: remCalc($h2Size);
-  font-weight: remCalc($h2Weight);
+  font-weight: 7$h2Weight;
   line-height: remCalc($h2LineHeight);
   letter-spacing: remCalc(0.2);
   text-transform: uppercase;
@@ -192,12 +192,26 @@ main {
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   }
 
+  p {
+    font-size: remCalc($pSize);
+    color: $secondaryColor;
+    font-weight: $h1Weight;
+    text-align: center;
+    margin-top: remCalc(10);
+    text-transform: uppercase;
+  }
+
   // Temtem infos
   .tempedia-container {
     position: relative;
     height: remCalc(800);
     background-color: $lightSecondary;
     margin-top: 2rem;
+
+    p {
+      text-transform: none;
+      color: $bgPrimary;
+    }
 
     .img-bottom {
       position: absolute;
