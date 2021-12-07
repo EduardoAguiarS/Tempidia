@@ -139,38 +139,44 @@ a {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #36314f;
+  background: #291736;
+}
+
+.btn-lg,
+.btn-sm {
+  background: #faa34a;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Passion One", cursive;
+  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-lg:hover,
+.btn-sm:hover {
+  background: #e8b056;
+  -webkit-transform: translateY(-0.3125rem);
+          transform: translateY(-0.3125rem);
 }
 
 .btn-lg {
-  background: #faa34a;
-  font-family: "Passion One", cursive;
   font-size: 1.5rem;
   font-weight: 25rem;
   line-height: 3rem;
-  text-transform: uppercase;
-  text-align: center;
   display: block;
-  color: white;
   max-width: 18.125rem;
   width: 100%;
-  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
-  -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
 }
 
 .btn-sm {
-  background: #faa34a;
-  font-family: "Passion One", cursive;
   font-size: 1.125rem;
   font-weight: 25rem;
   line-height: 2.25rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
   display: inline-block;
   min-width: 8.125rem;
-  clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
-  -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
 }
 
 .btn-secondaryColor {
@@ -184,6 +190,73 @@ h4,
 h5,
 h6 {
   font-family: "Passion One", cursive;
+}
+
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 1.25rem 0;
+  background: #36314f;
+}
+
+.menu-header .logo {
+  display: block;
+  width: 10.625rem;
+  margin-left: 3.75rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu-header .logo:hover {
+  -webkit-transform: translateY(-0.1875rem);
+          transform: translateY(-0.1875rem);
+}
+
+.menu-header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-header nav ul li {
+  margin: 0 0.625rem;
+  padding: 0.625rem;
+}
+
+.menu-header nav ul a {
+  color: white;
+  font-family: "Passion One", cursive;
+  font-size: 1.25rem;
+  font-weight: 43.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01875rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu-header nav ul a:hover {
+  color: #faa34a;
+  -webkit-transform: translateY(-0.125rem);
+          transform: translateY(-0.125rem);
+}
+
+.menu-header .buy {
+  margin-right: 3.75rem;
 }
 
 main {

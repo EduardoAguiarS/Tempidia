@@ -7,96 +7,71 @@
 body {
   font-family: $textFontFamily;
 
-  background: $primaryColor;
+  background: $darkPrimary;
 }
 
 // Buttons
-.btn-lg {
+.btn-lg,
+.btn-sm {
   background: $secondaryColor;
-
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
   font-family: $titleFontFamily;
+
+  clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+
+  -webkit-clip-path: polygon(
+    0 3%,
+    0 33%,
+    1.5% 45%,
+    2% 99%,
+    53% 97%,
+    100% 100%,
+    99.5% 70%,
+    98% 44%,
+    99% 1%,
+    65% 3%,
+    36% 1%
+  );
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $lightSecondary;
+    transform: translateY(remCalc(-5));
+  }
+}
+
+.btn-lg {
   font-size: remCalc($btnLgSize);
   font-weight: remCalc($btnLgWeight);
   line-height: remCalc($btnLgLineHeight);
-  text-transform: uppercase;
-  text-align: center;
   display: block;
-
-  color: $white;
 
   max-width: remCalc(290);
   width: 100%;
-
-  clip-path: polygon(
-    0 3%,
-    0 33%,
-    1.5% 45%,
-    2% 99%,
-    53% 97%,
-    100% 100%,
-    99.5% 70%,
-    98% 44%,
-    99% 1%,
-    65% 3%,
-    36% 1%
-  );
-
-  -webkit-clip-path: polygon(
-    0 3%,
-    0 33%,
-    1.5% 45%,
-    2% 99%,
-    53% 97%,
-    100% 100%,
-    99.5% 70%,
-    98% 44%,
-    99% 1%,
-    65% 3%,
-    36% 1%
-  );
 }
-.btn-sm {
-  background: $secondaryColor;
 
-  font-family: $titleFontFamily;
+.btn-sm {
   font-size: remCalc($btnSmSize);
   font-weight: remCalc($btnSmWeight);
   line-height: remCalc($btnSmLineHeight);
-  text-transform: uppercase;
-  text-align: center;
-
-  color: $white;
 
   display: inline-block;
   min-width: remCalc(130);
-
-  clip-path: polygon(
-    0 3%,
-    0 33%,
-    1.5% 45%,
-    2% 99%,
-    53% 97%,
-    100% 100%,
-    99.5% 70%,
-    98% 44%,
-    99% 1%,
-    65% 3%,
-    36% 1%
-  );
-
-  -webkit-clip-path: polygon(
-    0 3%,
-    0 33%,
-    1.5% 45%,
-    2% 99%,
-    53% 97%,
-    100% 100%,
-    99.5% 70%,
-    98% 44%,
-    99% 1%,
-    65% 3%,
-    36% 1%
-  );
 }
 
 .btn-secondaryColor {
@@ -114,6 +89,63 @@ h6 {
 }
 
 // Header
+.menu-header {
+  // Default
+  @include flexModular(space-between, center);
+  position: fixed;
+  width: 100%;
+
+  padding: remCalc(20) 0;
+
+  background: $primaryColor;
+
+  // Logo
+  .logo {
+    display: block;
+    width: remCalc(170);
+    margin-left: remCalc(60);
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(remCalc(-3));
+    }
+  }
+
+  // Navbar
+  nav ul {
+    @include flexModular(space-between, center);
+
+    li {
+      margin: 0 remCalc(10);
+      padding: remCalc(10);
+    }
+
+    a {
+      color: $white;
+
+      font-family: $titleFontFamily;
+      font-size: remCalc($h2Size);
+      font-weight: remCalc($h2Weight);
+
+      text-transform: uppercase;
+
+      letter-spacing: remCalc(0.3);
+
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $secondaryColor;
+        transform: translateY(remCalc(-2));
+      }
+    }
+  }
+
+  // Buy Btn
+  .buy {
+    margin-right: remCalc(60);
+  }
+}
 
 // Main
 main {
