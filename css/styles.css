@@ -204,13 +204,18 @@ h6 {
           align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 100;
   padding: 1.25rem 0;
   background: #36314f;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 25px 25px;
+  border-bottom: 1px solid #855b80;
 }
 
 .menu-header .logo {
   display: block;
-  width: 10.625rem;
+  width: 11.25rem;
   margin-left: 3.75rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -262,5 +267,6 @@ h6 {
 main {
   max-width: 75rem;
   margin: 0 auto;
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */
