@@ -296,6 +296,10 @@ main {
     // Temtem Card
     .temtem-card {
       margin: remCalc(32) remCalc(48);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       opacity: 0;
       visibility: hidden;
@@ -307,6 +311,26 @@ main {
         visibility: visible;
         transition: all 0.3s ease;
         transform: translateX(0);
+      }
+
+      .temtem-infos {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 1rem;
+        text-align: start;
+
+        #types p,
+        #description p {
+          text-transform: uppercase;
+          color: $secondaryColor;
+          text-align: start;
+
+          span {
+            text-transform: none;
+            color: $primaryColor;
+          }
+        }
       }
 
       .temtem-portrait {

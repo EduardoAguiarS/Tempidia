@@ -33,8 +33,13 @@ function searchTemtem(event) {
           temtem.number == temtemSearch.value.trim()
         ) {
           urlApi = `https://temtem-api.mael.tech/api/temtems/${temtem.number}`;
+          const type = temtem.types.map(type => type).join(", ");
+
+          // Temtem Card
           temtemImg.src = `https://temtem-api.mael.tech/images/portraits/temtem/large/${temtem.name}.png`;
           temtemName.textContent = temtem.name;
+          description.innerHTML = `<p>Description: <span>${temtem.gameDescription}</span></p>`;
+          types.innerHTML = `<p>Types: <span>${type}</span></p>`;
 
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
