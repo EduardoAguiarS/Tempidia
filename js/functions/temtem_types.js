@@ -1,8 +1,25 @@
-function createTypes(item) {
+export function createTypes(type) {
   const typesImg = document.querySelector(".types-img");
-  const createImg = document.createElement("img");
-  createImg.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-  typesImg.appendChild(createImg);
+  const imgsType = document.querySelectorAll(".types-img img");
+
+  if (imgsType.length < type.length) {
+    const createImg = document.createElement("img");
+    typesImg.appendChild(createImg);
+    createImg.setAttribute("class", "elementar");
+    createImg.setAttribute("src", "");
+  }
 }
 
-export default createTypes;
+export function setTypes(type) {
+  const elementar = document.querySelectorAll(".elementar");
+  elementar.forEach((element, index) => {
+    element.src = "";
+
+    const elementUrl = `https://temtem-api.mael.tech/images/icons/types/${type[index]}.png`;
+    const undefinedUrl = `https://temtem-api.mael.tech/images/icons/types/undefined.png`;
+
+    if (elementUrl !== undefinedUrl) {
+      element.src = elementUrl;
+    }
+  });
+}

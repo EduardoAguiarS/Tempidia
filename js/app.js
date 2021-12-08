@@ -1,5 +1,5 @@
 // Functions imports
-import createTypes from "./functions/temtem_types.js";
+import { createTypes, setTypes } from "./functions/temtem_types.js";
 import searchError from "./functions/search_error.js";
 import temtemPortrait from "./functions/temtem_portrait.js";
 
@@ -47,9 +47,21 @@ function searchTemtem(event) {
 
           // Temtem Types
           const type = temtem.types.map(type => type);
-          type.forEach(item => {
-            createTypes(item);
+          type.forEach(() => {
+            createTypes(type);
           });
+          setTypes(type);
+          // const elementar = document.querySelectorAll(".elementar");
+          // elementar.forEach((element, index) => {
+          //   element.src = "";
+
+          //   const elementUrl = `https://temtem-api.mael.tech/images/icons/types/${type[index]}.png`;
+          //   const undefinedUrl = `https://temtem-api.mael.tech/images/icons/types/undefined.png`;
+
+          //   if (elementUrl !== undefinedUrl) {
+          //     element.src = elementUrl;
+          //   }
+          // });
 
           // Reset
           temtemNumber = temtem.number;
