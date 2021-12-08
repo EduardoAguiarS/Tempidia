@@ -439,16 +439,20 @@ main {
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-infos #types p,
-.tempedia .tempedia-container .temtem-card .temtem-infos #description p {
+.tempedia .tempedia-container .temtem-card .temtem-infos #description p,
+.tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p {
   text-transform: uppercase;
   color: #faa34a;
   text-align: start;
+  margin-top: 0.2rem;
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-infos #types p span,
-.tempedia .tempedia-container .temtem-card .temtem-infos #description p span {
+.tempedia .tempedia-container .temtem-card .temtem-infos #description p span,
+.tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p span {
   text-transform: none;
   color: #36314f;
+  font-weight: 400;
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-portrait {

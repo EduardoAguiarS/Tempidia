@@ -321,14 +321,16 @@ main {
         text-align: start;
 
         #types p,
-        #description p {
+        #description p,
+        #temtemId p {
           text-transform: uppercase;
           color: $secondaryColor;
           text-align: start;
-
+          margin-top: 0.2rem;
           span {
             text-transform: none;
             color: $primaryColor;
+            font-weight: 400;
           }
         }
       }

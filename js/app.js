@@ -20,8 +20,6 @@ function searchTemtem(event) {
   event.preventDefault();
   let temtemNumber = 0;
   urlApi = temtemApi();
-  temtemCard.classList.add("active");
-  tempediaText.classList.remove("active");
 
   fetch(urlApi)
     .then(response => response.json())
@@ -32,14 +30,27 @@ function searchTemtem(event) {
             temtemSearch.value.toLowerCase().trim() ||
           temtem.number == temtemSearch.value.trim()
         ) {
+          temtemCard.classList.add("active");
+          tempediaText.classList.remove("active");
+
           urlApi = `https://temtem-api.mael.tech/api/temtems/${temtem.number}`;
-          const type = temtem.types.map(type => type).join(", ");
+          const type = temtem.types.map(type => type);
 
           // Temtem Card
           temtemImg.src = `https://temtem-api.mael.tech/images/portraits/temtem/large/${temtem.name}.png`;
           temtemName.textContent = temtem.name;
           description.innerHTML = `<p>Description: <span>${temtem.gameDescription}</span></p>`;
-          types.innerHTML = `<p>Types: <span>${type}</span></p>`;
+          temtemId.innerHTML = `<p>Number: <span>${temtem.number}</span></p>`;
+
+          type.forEach((item, index, array) => {
+            if (index === 0) {
+              type1.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
+            }
+
+            if (index === 1) {
+              type2.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
+            }
+          });
 
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
