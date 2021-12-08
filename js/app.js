@@ -1,26 +1,29 @@
-import searchError from "./functions/search_error.js";
+// Functions imports
 import createTypes from "./functions/temtem_types.js";
+import searchError from "./functions/search_error.js";
+import temtemPortrait from "./functions/temtem_portrait.js";
+
 // Elements
-const temtemSearch = document.getElementById("temtemSearch");
-const searchButton = document.getElementById("searchButton");
-const temtemImg = document.getElementById("temtemImg");
-const temtemName = document.getElementById("temtemName");
-const temtemCard = document.querySelector(".temtem-card");
-const tempediaText = document.querySelector(".tempedia-text");
+export const temtemSearch = document.getElementById("temtemSearch");
+export const searchButton = document.getElementById("searchButton");
+export const temtemImg = document.getElementById("temtemImg");
+export const temtemName = document.getElementById("temtemName");
+export const temtemCard = document.querySelector(".temtem-card");
+export const tempediaText = document.querySelector(".tempedia-text");
 
 // Events
 searchButton.addEventListener("click", searchTemtem);
 
 // Api
-function temtemApi() {
-  let urlApi = `https://temtem-api.mael.tech/api/temtems`;
-  return urlApi;
+function temtemApi(api) {
+  api = `https://temtem-api.mael.tech/api/temtems`;
+  return api;
 }
+export let temtemNumber = 0;
 
 // Search Temtem
 function searchTemtem(event) {
   event.preventDefault();
-  let temtemNumber = 0;
   let urlApi = temtemApi();
 
   fetch(urlApi)
@@ -38,36 +41,19 @@ function searchTemtem(event) {
           urlApi = `https://temtem-api.mael.tech/api/temtems/${temtem.number}`;
           const type = temtem.types.map(type => type);
 
-          // Temtem Card
-          temtemImg.src = `https://temtem-api.mael.tech/images/portraits/temtem/large/${temtem.name}.png`;
-          temtemName.textContent = temtem.name;
-          description.innerHTML = `<p>Description: <span>${temtem.gameDescription}</span></p>`;
-          temtemId.innerHTML = `<p>Number: <span>${temtem.number}</span></p>`;
+          // // Temtem Portrait
+          temtemPortrait(temtem.name, temtem.number, temtem.gameDescription);
 
           // Temtem Types
           type.forEach(item => {
             createTypes(item);
           });
 
-          // type.forEach((item, index, array) => {
-          //   if (index === 0) {
-          //     type1.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-          //   }
-
-          //   if (index === 1) {
-          //     type2.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-          //   } else {
-          //     type2.src = "";
-          //   }
-          //   console.log(array.length);
-          // });
-
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
         }
+        // Search Error
+        searchError(urlApi);
       });
-
-      // Search Erros
-      searchError(urlApi, temtemNumber, temtemCard, tempediaText);
     });
 }
