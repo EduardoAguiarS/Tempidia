@@ -180,7 +180,7 @@ body {
 }
 
 .btn-secondaryColor {
-  background: #36314f;
+  background: #462f57;
 }
 
 h1,
@@ -271,14 +271,14 @@ h2 {
 }
 
 .menu-header nav ul a:hover {
-  color: #36314f;
+  color: #462f57;
   -webkit-transform: translateY(-0.125rem);
           transform: translateY(-0.125rem);
 }
 
 .menu-header .buy {
   margin-right: 1.875rem;
-  background: #36314f;
+  background: #462f57;
   color: #ffffff;
 }
 
@@ -365,7 +365,7 @@ main {
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: #36314f;
+  color: #462f57;
   outline: none;
   border: solid 3px transparent;
   -webkit-transition: all 0.2s ease;
@@ -438,21 +438,39 @@ main {
   text-align: start;
 }
 
-.tempedia .tempedia-container .temtem-card .temtem-infos #types p,
+.tempedia .tempedia-container .temtem-card .temtem-infos .types p,
 .tempedia .tempedia-container .temtem-card .temtem-infos #description p,
 .tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p {
+  font-family: "Passion One", cursive;
   text-transform: uppercase;
   color: #faa34a;
   text-align: start;
-  margin-top: 0.2rem;
+  font-size: 1.5rem;
 }
 
-.tempedia .tempedia-container .temtem-card .temtem-infos #types p span,
+.tempedia .tempedia-container .temtem-card .temtem-infos .types p span,
 .tempedia .tempedia-container .temtem-card .temtem-infos #description p span,
 .tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p span {
+  font-family: "Open Sans", sans-serif;
   text-transform: none;
-  color: #36314f;
+  color: #462f57;
   font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-infos .types {
+  margin-top: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-infos .types img {
+  width: 40px;
+  display: block;
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-portrait {

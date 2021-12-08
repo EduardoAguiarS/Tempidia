@@ -320,18 +320,32 @@ main {
         margin-left: 1rem;
         text-align: start;
 
-        #types p,
+        .types p,
         #description p,
         #temtemId p {
+          font-family: $titleFontFamily;
           text-transform: uppercase;
           color: $secondaryColor;
           text-align: start;
-          margin-top: 0.2rem;
+          font-size: remCalc($h2Size);
           span {
+            font-family: $textFontFamily;
             text-transform: none;
             color: $primaryColor;
             font-weight: 400;
+            font-size: remCalc(18);
           }
+        }
+
+        .types {
+          margin-top: 0.4rem;
+          display: flex;
+          align-items: center;
+        }
+
+        .types img {
+          width: 40px;
+          display: block;
         }
       }
 
