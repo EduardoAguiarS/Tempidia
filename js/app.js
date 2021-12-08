@@ -1,5 +1,5 @@
-import searchError from "./search_error.js";
-import createTypes from "./temtem_card.js";
+import searchError from "./functions/search_error.js";
+import createTypes from "./functions/temtem_types.js";
 // Elements
 const temtemSearch = document.getElementById("temtemSearch");
 const searchButton = document.getElementById("searchButton");
