@@ -57,6 +57,12 @@ function searchTemtem(event) {
           });
           setTypes(type);
 
+          //Traits
+          const traits = temtem.traits.map(trait => trait);
+          traits.forEach(() => {
+            // createTraits();
+          });
+
           // Reset
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
