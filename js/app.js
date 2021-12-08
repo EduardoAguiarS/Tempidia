@@ -13,6 +13,11 @@ export const tempediaText = document.querySelector(".tempedia-text");
 
 // Events
 searchButton.addEventListener("click", searchTemtem);
+temtemSearch.addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    searchTemtem(event);
+  }
+});
 
 // Api
 function temtemApi(api) {
@@ -51,17 +56,6 @@ function searchTemtem(event) {
             createTypes(type);
           });
           setTypes(type);
-          // const elementar = document.querySelectorAll(".elementar");
-          // elementar.forEach((element, index) => {
-          //   element.src = "";
-
-          //   const elementUrl = `https://temtem-api.mael.tech/images/icons/types/${type[index]}.png`;
-          //   const undefinedUrl = `https://temtem-api.mael.tech/images/icons/types/undefined.png`;
-
-          //   if (elementUrl !== undefinedUrl) {
-          //     element.src = elementUrl;
-          //   }
-          // });
 
           // Reset
           temtemNumber = temtem.number;

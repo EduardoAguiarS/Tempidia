@@ -4,7 +4,7 @@ export function createTypes(type) {
 
   if (imgsType.length < type.length) {
     const createImg = document.createElement("img");
-    typesImg.appendChild(createImg);
+    typesImg.append(createImg);
     createImg.setAttribute("class", "elementar");
     createImg.setAttribute("src", "");
   }
@@ -12,6 +12,7 @@ export function createTypes(type) {
 
 export function setTypes(type) {
   const elementar = document.querySelectorAll(".elementar");
+
   elementar.forEach((element, index) => {
     element.src = "";
 
