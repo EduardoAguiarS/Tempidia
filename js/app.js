@@ -1,3 +1,4 @@
+import createTypes from "./temtem_card.js";
 // Elements
 const temtemSearch = document.getElementById("temtemSearch");
 const searchButton = document.getElementById("searchButton");
@@ -19,7 +20,7 @@ function temtemApi() {
 function searchTemtem(event) {
   event.preventDefault();
   let temtemNumber = 0;
-  urlApi = temtemApi();
+  let urlApi = temtemApi();
 
   fetch(urlApi)
     .then(response => response.json())
@@ -42,15 +43,23 @@ function searchTemtem(event) {
           description.innerHTML = `<p>Description: <span>${temtem.gameDescription}</span></p>`;
           temtemId.innerHTML = `<p>Number: <span>${temtem.number}</span></p>`;
 
-          type.forEach((item, index, array) => {
-            if (index === 0) {
-              type1.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-            }
-
-            if (index === 1) {
-              type2.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-            }
+          // Temtem Types
+          type.forEach(item => {
+            createTypes(item);
           });
+
+          // type.forEach((item, index, array) => {
+          //   if (index === 0) {
+          //     type1.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
+          //   }
+
+          //   if (index === 1) {
+          //     type2.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
+          //   } else {
+          //     type2.src = "";
+          //   }
+          //   console.log(array.length);
+          // });
 
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
