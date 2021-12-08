@@ -1,3 +1,4 @@
+import searchError from "./search_error.js";
 import createTypes from "./temtem_card.js";
 // Elements
 const temtemSearch = document.getElementById("temtemSearch");
@@ -65,12 +66,8 @@ function searchTemtem(event) {
           errorSearch.textContent = "";
         }
       });
-      if (
-        urlApi != `https://temtem-api.mael.tech/api/temtems/${temtemNumber}`
-      ) {
-        errorSearch.textContent = `Temtem "${temtemSearch.value}" is not available!`;
-        temtemCard.classList.remove("active");
-        tempediaText.classList.add("active");
-      }
+
+      // Search Erros
+      searchError(urlApi, temtemNumber, temtemCard, tempediaText);
     });
 }
