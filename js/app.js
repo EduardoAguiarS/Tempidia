@@ -35,20 +35,23 @@ function searchTemtem(event) {
             temtemSearch.value.toLowerCase().trim() ||
           temtem.number == temtemSearch.value.trim()
         ) {
+          // Add or Remove Class
           temtemCard.classList.add("active");
           tempediaText.classList.remove("active");
 
+          // Temtem
           urlApi = `https://temtem-api.mael.tech/api/temtems/${temtem.number}`;
-          const type = temtem.types.map(type => type);
 
-          // // Temtem Portrait
+          // Temtem Portrait
           temtemPortrait(temtem.name, temtem.number, temtem.gameDescription);
 
           // Temtem Types
+          const type = temtem.types.map(type => type);
           type.forEach(item => {
             createTypes(item);
           });
 
+          // Reset
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
         }
