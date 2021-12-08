@@ -329,6 +329,29 @@ main {
   right: -0.625rem;
 }
 
+.tempedia .tempedia-container .tempedia-text {
+  margin-top: 10rem;
+  padding: 3rem;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  top: 35%;
+  right: 100%;
+  width: 90%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tempedia .tempedia-container .tempedia-text.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  right: 0;
+}
+
 .tempedia .tempedia-container form {
   text-align: center;
   padding-top: 2rem;
@@ -376,6 +399,21 @@ main {
 
 .tempedia .tempedia-container .temtem-card {
   margin: 2rem 3rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(-30rem);
+          transform: translateX(-30rem);
+}
+
+.tempedia .tempedia-container .temtem-card.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-portrait {
@@ -398,6 +436,7 @@ main {
 
 .tempedia .tempedia-container .temtem-card .temtem-portrait img {
   width: 250px;
+  height: 250px;
   -webkit-filter: drop-shadow(0 0 2px black);
           filter: drop-shadow(0 0 2px black);
   -webkit-clip-path: polygon(51% 5%, 88% 28%, 89% 73%, 50% 92%, 14% 72%, 12% 29%);
