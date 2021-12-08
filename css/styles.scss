@@ -320,7 +320,7 @@ main {
         margin-left: 1rem;
         text-align: start;
 
-        .types p,
+        .type-content p,
         #description p,
         #temtemId p {
           font-family: $titleFontFamily;
@@ -337,15 +337,15 @@ main {
           }
         }
 
-        .types {
-          margin-top: 0.4rem;
+        .type-content {
           display: flex;
           align-items: center;
-        }
+          margin-top: remCalc(10);
 
-        .types img {
-          width: 40px;
-          display: block;
+          img {
+            width: 30px;
+            margin-right: 0.3rem;
+          }
         }
       }
 
