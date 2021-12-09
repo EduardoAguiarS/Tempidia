@@ -485,3 +485,47 @@ main {
     36% 1%
   );
 }
+
+.matchups h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.matchups {
+  margin-top: 6rem;
+  margin-left: 48px;
+  margin-right: 48px;
+  background: #e94445;
+  display: block;
+  padding: 5rem 0;
+  border-radius: 15px;
+}
+
+.matchups .damage-content img {
+  width: 30px;
+}
+
+ul#matchup1,
+ul#matchup2 {
+  padding: 0 10rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+li.damage1,
+li.damage2 {
+  display: flex;
+  padding: 0.5rem;
+  background: #faa34a;
+  align-items: center;
+  border-radius: 5px;
+  gap: 0.3rem;
+}
+
+ul#matchup2 {
+  margin-top: 3rem;
+}
