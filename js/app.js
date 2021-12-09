@@ -65,6 +65,24 @@ function searchTemtem(event) {
             createTraits(traits, index);
           });
 
+          //Weakness Api
+          function calcWeak() {
+            const WeakApi = `https://temtem-api.mael.tech/api/weaknesses`;
+
+            fetch(WeakApi)
+              .then(response => response.json())
+              .then(data => {
+                type.forEach((type, index) => {
+                  for (let tipo in data) {
+                    if (tipo == type) {
+                      console.log(data[tipo]);
+                    }
+                  }
+                });
+              });
+          }
+          calcWeak();
+
           // Reset
           temtemNumber = temtem.number;
           errorSearch.textContent = "";

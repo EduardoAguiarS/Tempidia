@@ -1,141 +1,170 @@
 {
-  "number": 123,
-  "name": "Nessla",
-  "types": ["Water", "Electric"],
-  "portraitWikiUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",
-  "lumaPortraitWikiUrl": "",
-  "wikiUrl": "https://temtem.gamepedia.com/Nessla",
-  "stats": {
-    "hp": 50,
-    "sta": 58,
-    "spd": 66,
-    "atk": 76,
-    "def": 50,
-    "spatk": 76,
-    "spdef": 72,
-    "total": 448
+  "Neutral": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 1,
+    "Water": 1,
+    "Fire": 1,
+    "Nature": 1,
+    "Electric": 1,
+    "Mental": 0.5,
+    "Digital": 1,
+    "Melee": 1,
+    "Crystal": 1,
+    "Toxic": 1
   },
-  "traits": ["Electric Synthesize", "Hydrologist"],
-  "details": {
-    "height": { "cm": 190, "inches": 74 },
-    "weight": { "kg": 65, "lbs": 144 }
+  "Wind": {
+    "Neutral": 1,
+    "Wind": 0.5,
+    "Earth": 1,
+    "Water": 1,
+    "Fire": 1,
+    "Nature": 1,
+    "Electric": 0.5,
+    "Mental": 1,
+    "Digital": 1,
+    "Melee": 1,
+    "Crystal": 1,
+    "Toxic": 2
   },
-  "techniques": [
-    { "name": "Bubbles", "source": "Levelling", "levels": 1 },
-    { "name": "Water Blade", "source": "Levelling", "levels": 4 },
-    { "name": "Chain Lightning", "source": "Levelling", "levels": 6 },
-    { "name": "Sparks", "source": "Levelling", "levels": 9 },
-    { "name": "Strangle", "source": "Levelling", "levels": 13 },
-    { "name": "Tesla Prison", "source": "Levelling", "levels": 16 },
-    { "name": "Stare", "source": "Levelling", "levels": 24 },
-    { "name": "Iced Stalactite", "source": "Levelling", "levels": 30 },
-    { "name": "Electric Storm", "source": "Levelling", "levels": 44 },
-    { "name": "Thunder Strike", "source": "Levelling", "levels": 57 },
-    { "name": "Defibrillate", "source": "Levelling", "levels": 66 },
-    { "name": "Wake Up", "source": "TechniqueCourses" },
-    { "name": "Rend", "source": "TechniqueCourses" },
-    { "name": "Aquatic Whirlwind", "source": "Breeding" }
-  ],
-  "trivia": [
-    "Nessla was originally unnamed #33 on a list of scrapped Temtem that was to be voted to bring back on Kickstarter Update #2.",
-    "Nessla was one of the two winners of the Choose a Temtem backer mini-game during the Kickstarter."
-  ],
-  "evolution": { "evolves": false },
-  "wikiPortraitUrlLarge": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",
-  "lumaWikiPortraitUrlLarge": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",
-  "locations": [
-    {
-      "location": "Thalassian Cliffs",
-      "place": "Thalassian Cliffs",
-      "note": "",
-      "island": "Deniz",
-      "frequency": "10%",
-      "level": "17 - 18",
-      "freetem": {
-        "minLevel": 17,
-        "maxLevel": 18,
-        "minPansuns": 99,
-        "maxPansuns": 104
-      }
-    },
-    {
-      "location": "Sillaro River",
-      "place": "Sillaro River",
-      "note": "",
-      "island": "Deniz",
-      "frequency": "10%",
-      "level": "14 - 16",
-      "freetem": {
-        "minLevel": 14,
-        "maxLevel": 16,
-        "minPansuns": 85,
-        "maxPansuns": 94
-      }
-    },
-    {
-      "location": "Mines of Mictlan",
-      "place": "Mines of Mictlan",
-      "note": "",
-      "island": "Tucma",
-      "frequency": "Gift",
-      "level": "39",
-      "freetem": {
-        "minLevel": 39,
-        "maxLevel": 39,
-        "minPansuns": 200,
-        "maxPansuns": 200
-      }
-    },
-    {
-      "location": "Rice Fields",
-      "place": "",
-      "note": "",
-      "island": "Cipanku",
-      "frequency": "20%",
-      "level": "46 - 55",
-      "freetem": {
-        "minLevel": 46,
-        "maxLevel": 55,
-        "minPansuns": 233,
-        "maxPansuns": 274
-      }
-    },
-    {
-      "location": "Sacred Lake",
-      "place": "",
-      "note": "",
-      "island": "Cipanku",
-      "frequency": "40%",
-      "level": "55 - 65",
-      "freetem": {
-        "minLevel": 55,
-        "maxLevel": 65,
-        "minPansuns": 274,
-        "maxPansuns": 320
-      }
-    }
-  ],
-  "icon": "/images/portraits/temtem/large/Nessla.png",
-  "lumaIcon": "/images/portraits/temtem/luma/large/Nessla.png",
-  "genderRatio": { "male": 70, "female": 30 },
-  "catchRate": 65,
-  "hatchMins": 32,
-  "tvYields": {
-    "hp": 0,
-    "sta": 0,
-    "spd": 0,
-    "atk": 0,
-    "def": 0,
-    "spatk": 0,
-    "spdef": 2
+  "Earth": {
+    "Neutral": 1,
+    "Wind": 0.5,
+    "Earth": 1,
+    "Water": 0.5,
+    "Fire": 2,
+    "Nature": 0.5,
+    "Electric": 2,
+    "Mental": 1,
+    "Digital": 1,
+    "Melee": 1,
+    "Crystal": 2,
+    "Toxic": 1
   },
-  "gameDescription": "Water and electricity are always a dangerous mix - and it's never as true as in the case of Nessla. These undulating, majestic creatures are at home in open waters, where their powerful electric discharges are most effective.",
-  "wikiRenderStaticUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP//",
-  "wikiRenderAnimatedUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP//",
-  "wikiRenderStaticLumaUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP//",
-  "wikiRenderAnimatedLumaUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP//",
-  "renderStaticImage": "/images/renders/temtem/static/Nessla.png",
-  "renderStaticLumaImage": "/images/renders/temtem/luma/static/Nessla.png",
-  "renderAnimatedImage": "/images/renders/temtem/animated/Nessla.gif",
-  "renderAnimatedLumaImage": "/images/renders/temtem/luma/animated/Nessla.gif"
+  "Water": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 2,
+    "Water": 0.5,
+    "Fire": 2,
+    "Nature": 0.5,
+    "Electric": 1,
+    "Mental": 1,
+    "Digital": 2,
+    "Melee": 1,
+    "Crystal": 1,
+    "Toxic": 0.5
+  },
+  "Fire": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 0.5,
+    "Water": 0.5,
+    "Fire": 0.5,
+    "Nature": 2,
+    "Electric": 1,
+    "Mental": 1,
+    "Digital": 1,
+    "Melee": 1,
+    "Crystal": 2,
+    "Toxic": 1
+  },
+  "Nature": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 2,
+    "Water": 2,
+    "Fire": 0.5,
+    "Nature": 0.5,
+    "Electric": 1,
+    "Mental": 1,
+    "Digital": 1,
+    "Melee": 1,
+    "Crystal": 1,
+    "Toxic": 0.5
+  },
+  "Electric": {
+    "Neutral": 1,
+    "Wind": 2,
+    "Earth": 0.5,
+    "Water": 2,
+    "Fire": 1,
+    "Nature": 0.5,
+    "Electric": 0.5,
+    "Mental": 2,
+    "Digital": 2,
+    "Melee": 1,
+    "Crystal": 0.5,
+    "Toxic": 1
+  },
+  "Mental": {
+    "Neutral": 2,
+    "Wind": 1,
+    "Earth": 1,
+    "Water": 1,
+    "Fire": 1,
+    "Nature": 1,
+    "Electric": 1,
+    "Mental": 1,
+    "Digital": 1,
+    "Melee": 2,
+    "Crystal": 0.5,
+    "Toxic": 1
+  },
+  "Digital": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 1,
+    "Water": 1,
+    "Fire": 1,
+    "Nature": 1,
+    "Electric": 1,
+    "Mental": 2,
+    "Digital": 2,
+    "Melee": 2,
+    "Crystal": 1,
+    "Toxic": 1
+  },
+  "Melee": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 2,
+    "Water": 1,
+    "Fire": 1,
+    "Nature": 1,
+    "Electric": 1,
+    "Mental": 0.5,
+    "Digital": 1,
+    "Melee": 0.5,
+    "Crystal": 2,
+    "Toxic": 1
+  },
+  "Crystal": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 0.5,
+    "Water": 1,
+    "Fire": 0.5,
+    "Nature": 1,
+    "Electric": 2,
+    "Mental": 2,
+    "Digital": 1,
+    "Melee": 1,
+    "Crystal": 1,
+    "Toxic": 1
+  },
+  "Toxic": {
+    "Neutral": 1,
+    "Wind": 1,
+    "Earth": 0.5,
+    "Water": 2,
+    "Fire": 1,
+    "Nature": 2,
+    "Electric": 1,
+    "Mental": 1,
+    "Digital": 0.5,
+    "Melee": 1,
+    "Crystal": 0.5,
+    "Toxic": 0.5
+  }
 }
