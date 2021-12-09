@@ -424,6 +424,11 @@ main {
           transform: translateX(0);
 }
 
+.tempedia .tempedia-container .temtem-card .traits-title h1 {
+  margin-top: 1.3rem;
+  font-size: 3rem;
+}
+
 .tempedia .tempedia-container .temtem-card .temtem-infos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +439,14 @@ main {
           flex-direction: column;
   margin-left: 2rem;
   text-align: start;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-infos #description {
+  margin-top: 0;
+}
+
+.tempedia .tempedia-container .temtem-card .temtem-infos .type-content p {
+  margin-top: 0;
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-infos .type-content p,

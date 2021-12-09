@@ -313,12 +313,25 @@ main {
         transform: translateX(0);
       }
 
+      .traits-title h1 {
+        margin-top: 1.3rem;
+        font-size: 3rem;
+      }
+
       .temtem-infos {
         display: flex;
         flex-direction: column;
 
         margin-left: 2rem;
         text-align: start;
+
+        #description {
+          margin-top: 0;
+        }
+
+        .type-content p {
+          margin-top: 0;
+        }
 
         .type-content p,
         #description p,
