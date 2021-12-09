@@ -205,20 +205,26 @@ main {
   // Temtem infos
   .tempedia-container {
     position: relative;
-    min-height: remCalc(1200);
+    max-height: 100%;
+    min-height: remCalc(800);
     background-color: $lightSecondary;
     margin-top: 2rem;
+
+    .img-bottom {
+      position: relative;
+      z-index: 0;
+
+      display: block;
+      bottom: -1.6rem;
+      right: -0.7rem;
+      margin-left: auto;
+
+      opacity: 1;
+    }
 
     p {
       text-transform: none;
       color: $bgPrimary;
-    }
-
-    .img-bottom {
-      position: absolute;
-      z-index: 3;
-      bottom: remCalc(-30);
-      right: remCalc(-10);
     }
 
     .tempedia-text {
@@ -228,7 +234,7 @@ main {
       display: block;
       position: absolute;
       margin: 0 auto;
-      top: 10%;
+
       right: 100%;
       width: 90%;
 
@@ -296,10 +302,11 @@ main {
 
     // Temtem Card
     .temtem-card {
-      margin: remCalc(32) remCalc(48);
-      padding: 2rem;
+      margin: remCalc(0) remCalc(48);
+      padding: 3rem 2rem;
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       opacity: 0;
       visibility: hidden;
