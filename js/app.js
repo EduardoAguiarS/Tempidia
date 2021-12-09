@@ -2,6 +2,7 @@
 import { createTypes, setTypes } from "./functions/temtem_types.js";
 import searchError from "./functions/search_error.js";
 import temtemPortrait from "./functions/temtem_portrait.js";
+import { createTraits } from "./functions/temtem_traits.js";
 
 // Elements
 export const temtemSearch = document.getElementById("temtemSearch");
@@ -59,8 +60,8 @@ function searchTemtem(event) {
 
           //Traits
           const traits = temtem.traits.map(trait => trait);
-          traits.forEach(() => {
-            // createTraits();
+          traits.forEach((traintName, index) => {
+            createTraits(traits, index);
           });
 
           // Reset
