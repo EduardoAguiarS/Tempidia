@@ -1,8 +1,8 @@
 // Functions imports
-import { createTypes } from "./functions/temtem_types.js";
+import { createTypes, clearTypes } from "./functions/temtem_types.js";
 import searchError from "./functions/search_error.js";
 import temtemPortrait from "./functions/temtem_portrait.js";
-import { createTraits } from "./functions/temtem_traits.js";
+import { createTraits, clearTraits } from "./functions/temtem_traits.js";
 
 // Elements
 export const temtemSearch = document.getElementById("temtemSearch");
@@ -53,20 +53,14 @@ function searchTemtem(event) {
 
           // Temtem Types
           const type = temtem.types.map(type => type);
-          const elementar = document.querySelectorAll(".elementar");
-          elementar.forEach(item => {
-            item.remove();
-          });
+          clearTypes();
           type.forEach((types, index) => {
             createTypes(type, index);
           });
 
           //Traits
           const traits = temtem.traits.map(trait => trait);
-          const traitElements = document.querySelectorAll(".trait");
-          traitElements.forEach(item => {
-            item.remove();
-          });
+          clearTraits();
           traits.forEach((traintName, index) => {
             createTraits(traits, index);
           });

@@ -19,3 +19,10 @@ export function createTraits(traits, index) {
       });
     });
 }
+
+export function clearTraits() {
+  const traitElements = document.querySelectorAll(".trait");
+  traitElements.forEach(item => {
+    item.remove();
+  });
+}
