@@ -190,6 +190,7 @@ main {
     color: $white;
     text-align: center;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    line-height: 3rem;
   }
 
   p {
@@ -204,7 +205,7 @@ main {
   // Temtem infos
   .tempedia-container {
     position: relative;
-    height: remCalc(800);
+    min-height: remCalc(1200);
     background-color: $lightSecondary;
     margin-top: 2rem;
 
@@ -227,7 +228,7 @@ main {
       display: block;
       position: absolute;
       margin: 0 auto;
-      top: 35%;
+      top: 10%;
       right: 100%;
       width: 90%;
 
@@ -298,7 +299,6 @@ main {
       margin: remCalc(32) remCalc(48);
       padding: 2rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
 
       opacity: 0;
@@ -317,23 +317,25 @@ main {
         display: flex;
         flex-direction: column;
 
-        margin-left: 1rem;
+        margin-left: 2rem;
         text-align: start;
 
         .type-content p,
         #description p,
-        #temtemId p {
+        #temtemId p,
+        .traits-content p {
           font-family: $titleFontFamily;
           text-transform: uppercase;
           color: $secondaryColor;
           text-align: start;
           font-size: remCalc($h2Size);
+
           span {
             font-family: $textFontFamily;
             text-transform: none;
             color: $primaryColor;
             font-weight: 400;
-            font-size: remCalc(18);
+            font-size: remCalc(16);
           }
         }
 
@@ -450,7 +452,7 @@ main {
   );
 
   -webkit-clip-path: polygon(
-    0 18%,
+    0 3%,
     0 33%,
     2.5% 45%,
     2% 99%,

@@ -292,13 +292,14 @@ main {
 .tempedia {
   padding: 3.75rem 1.25rem;
   clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
-  -webkit-clip-path: polygon(0 18%, 0 33%, 2.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
+  -webkit-clip-path: polygon(0 3%, 0 33%, 2.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
 }
 
 .tempedia h1 {
   color: #ffffff;
   text-align: center;
   text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  line-height: 3rem;
 }
 
 .tempedia p {
@@ -312,7 +313,7 @@ main {
 
 .tempedia .tempedia-container {
   position: relative;
-  height: 50rem;
+  min-height: 75rem;
   background-color: #ffe5b6;
   margin-top: 2rem;
 }
@@ -335,7 +336,7 @@ main {
   display: block;
   position: absolute;
   margin: 0 auto;
-  top: 35%;
+  top: 10%;
   right: 100%;
   width: 90%;
   opacity: 0;
@@ -403,9 +404,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -434,13 +432,14 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 1rem;
+  margin-left: 2rem;
   text-align: start;
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-infos .type-content p,
 .tempedia .tempedia-container .temtem-card .temtem-infos #description p,
-.tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p {
+.tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p,
+.tempedia .tempedia-container .temtem-card .temtem-infos .traits-content p {
   font-family: "Passion One", cursive;
   text-transform: uppercase;
   color: #faa34a;
@@ -450,12 +449,13 @@ main {
 
 .tempedia .tempedia-container .temtem-card .temtem-infos .type-content p span,
 .tempedia .tempedia-container .temtem-card .temtem-infos #description p span,
-.tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p span {
+.tempedia .tempedia-container .temtem-card .temtem-infos #temtemId p span,
+.tempedia .tempedia-container .temtem-card .temtem-infos .traits-content p span {
   font-family: "Open Sans", sans-serif;
   text-transform: none;
   color: #462f57;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .tempedia .tempedia-container .temtem-card .temtem-infos .type-content {
