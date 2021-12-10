@@ -55,16 +55,6 @@ export function calcWeak(type) {
             }
           }
 
-          // console.log(
-          //   `${types} x ${item}: ${temtemWeak[item]}x damage received`
-          // );
-
-          if (temtemWeak[item] == 2) {
-            console.log(
-              `${types} x ${item}: ${temtemWeak[array[index]]}x damage received`
-            );
-          }
-
           if (array[0] == item) {
             const createLi = document.createElement("li");
             weakness1.appendChild(createLi);

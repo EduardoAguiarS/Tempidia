@@ -286,12 +286,12 @@ h2 {
 
 main {
   max-width: 75rem;
-  margin: 7.5rem auto;
+  margin: 7.5rem auto 0 auto;
   position: relative;
 }
 
 .tempedia {
-  padding: 3.75rem 1.25rem;
+  padding: 3.75rem 1.25rem 6rem 1.25rem;
   clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
   -webkit-clip-path: polygon(0 3%, 0 33%, 2.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
 }

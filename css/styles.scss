@@ -178,14 +178,13 @@ h2 {
 // Main
 main {
   max-width: remCalc(1200);
-  margin: 7.5rem auto;
+  margin: 7.5rem auto 0 auto;
   position: relative;
 }
 
 //Tempedia
 .tempedia {
-  padding: remCalc(60) remCalc(20);
-
+  padding: 3.75rem 1.25rem 6rem 1.25rem;
   // Title
   h1 {
     color: $white;

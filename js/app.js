@@ -70,6 +70,9 @@ function searchTemtem(event) {
           clearMatchups();
           calcWeak(type);
 
+          // Most info
+          mostInfos.href = `https://temtem.gamepedia.com/${temtem.name}`;
+
           // Reset
           temtemNumber = temtem.number;
           errorSearch.textContent = "";
