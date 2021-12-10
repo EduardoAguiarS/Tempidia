@@ -223,6 +223,8 @@ h2 {
   width: 100%;
   z-index: 100;
   padding: 0.9375rem 0;
+  top: 0;
+  left: 0;
   background-image: url(../assets/header.png);
   background-size: cover;
   background-repeat: repeat-x;
@@ -284,9 +286,8 @@ h2 {
 
 main {
   max-width: 75rem;
-  margin: 0 auto;
+  margin: 7.5rem auto;
   position: relative;
-  top: 7.5rem;
 }
 
 .tempedia {
@@ -598,5 +599,17 @@ img.weakness-img {
 .weakness span {
   color: #462f57;
   font-weight: 700;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: #faa34a;
+  font-weight: 700;
+  color: #462f57;
+}
+
+footer a {
+  color: #e94444;
 }
 /*# sourceMappingURL=styles.css.map */

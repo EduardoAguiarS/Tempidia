@@ -113,6 +113,8 @@ h2 {
   width: 100%;
   z-index: 100;
   padding: remCalc(15) 0;
+  top: 0;
+  left: 0;
 
   background-image: url(../assets/header.png);
   background-size: cover;
@@ -176,9 +178,8 @@ h2 {
 // Main
 main {
   max-width: remCalc(1200);
-  margin: 0 auto;
+  margin: 7.5rem auto;
   position: relative;
-  top: remCalc(120);
 }
 
 //Tempedia
@@ -546,4 +547,16 @@ img.weakness-img {
 .weakness span {
   color: $primaryColor;
   font-weight: 700;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: $secondaryColor;
+  font-weight: 700;
+  color: $primaryColor;
+
+  a {
+    color: $bgPrimary;
+  }
 }
