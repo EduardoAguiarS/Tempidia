@@ -537,6 +537,10 @@ ul#weakness2 {
   gap: 0.3rem;
 }
 
+.weakness.vermelho {
+  background: blue;
+}
+
 img.weakness-img {
   width: remCalc(50);
   display: block;

@@ -29,7 +29,7 @@ function temtemApi(api) {
 export let temtemNumber = 0;
 
 // Search Temtem
-function searchTemtem(event) {
+async function searchTemtem(event) {
   event.preventDefault();
   let urlApi = temtemApi();
 
@@ -67,6 +67,7 @@ function searchTemtem(event) {
           });
 
           //Weakness Api
+
           clearMatchups();
           calcWeak(type);
 
