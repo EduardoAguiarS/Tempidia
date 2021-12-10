@@ -542,9 +542,14 @@ main {
   display: block;
 }
 
+.matchups h1 {
+  color: #faa34a;
+}
+
 .matchups h2 {
   text-align: center;
-  margin-top: 1rem;
+  color: #ffffff;
+  margin-top: 4rem;
 }
 
 .matchups .damage-content ul li img {
@@ -552,7 +557,9 @@ main {
 }
 
 ul#matchup1,
-ul#matchup2 {
+ul#matchup2,
+ul#weakness1,
+ul#weakness2 {
   padding: 0 10rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -583,9 +590,9 @@ ul#matchup2 {
 }
 
 img.weakness-img {
-  width: 3.75rem;
+  width: 3.125rem;
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .weakness span {
