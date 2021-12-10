@@ -3,7 +3,7 @@ import { createTypes, clearTypes } from "./functions/temtem_types.js";
 import searchError from "./functions/search_error.js";
 import temtemPortrait from "./functions/temtem_portrait.js";
 import { createTraits, clearTraits } from "./functions/temtem_traits.js";
-import { calcWeak } from "./functions/temtem_weakness.js";
+import { calcWeak, clearMatchups } from "./functions/temtem_weakness.js";
 
 // Elements
 export const temtemSearch = document.getElementById("temtemSearch");
@@ -67,6 +67,7 @@ function searchTemtem(event) {
           });
 
           //Weakness Api
+          clearMatchups();
           calcWeak(type);
 
           // Reset

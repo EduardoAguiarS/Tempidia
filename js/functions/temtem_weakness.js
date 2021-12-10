@@ -52,3 +52,13 @@ export function calcWeak(type) {
       });
     });
 }
+
+export function clearMatchups() {
+  document.querySelectorAll(".weakness").forEach(item => {
+    item.remove();
+  });
+
+  document.querySelectorAll(".weakness-img").forEach(item => {
+    item.remove();
+  });
+}
