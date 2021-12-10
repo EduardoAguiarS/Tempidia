@@ -460,7 +460,7 @@ main {
 .tempedia .tempedia-container .temtem-card .temtem-infos .traits-content p {
   font-family: "Passion One", cursive;
   text-transform: uppercase;
-  color: #faa34a;
+  color: #e94444;
   text-align: start;
   font-size: 1.5rem;
 }
@@ -533,7 +533,7 @@ main {
   margin-top: 3rem;
   margin-left: 48px;
   margin-right: 48px;
-  background: #e94445;
+  background: #462f57;
   padding: 5rem 0;
   border-radius: 15px;
   display: none;
@@ -550,7 +550,7 @@ main {
 .matchups h2 {
   text-align: center;
   color: #ffffff;
-  margin-top: 4rem;
+  margin: 1rem;
 }
 
 .matchups .damage-content ul li img {
@@ -574,7 +574,8 @@ ul#weakness2 {
   gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .weakness {
@@ -588,6 +589,10 @@ ul#weakness2 {
           align-items: center;
   border-radius: 5px;
   gap: 0.3rem;
+}
+
+.weakness.vermelho {
+  background: blue;
 }
 
 img.weakness-img {
@@ -611,5 +616,9 @@ footer {
 
 footer a {
   color: #e94444;
+}
+
+a#mostInfos {
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

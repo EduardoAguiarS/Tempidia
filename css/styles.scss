@@ -346,7 +346,7 @@ main {
         .traits-content p {
           font-family: $titleFontFamily;
           text-transform: uppercase;
-          color: $secondaryColor;
+          color: $bgPrimary;
           text-align: start;
           font-size: remCalc($h2Size);
 
@@ -490,7 +490,7 @@ main {
   margin-top: 3rem;
   margin-left: 48px;
   margin-right: 48px;
-  background: #e94445;
+  background: $primaryColor;
   padding: 5rem 0;
   border-radius: 15px;
 
@@ -508,7 +508,7 @@ main {
 .matchups h2 {
   text-align: center;
   color: $white;
-  margin-top: 4rem;
+  margin: 1rem;
 }
 
 .matchups .damage-content ul li img {
@@ -525,7 +525,8 @@ ul#weakness2 {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .weakness {
@@ -562,4 +563,8 @@ footer {
   a {
     color: $bgPrimary;
   }
+}
+
+a#mostInfos {
+  margin: auto;
 }

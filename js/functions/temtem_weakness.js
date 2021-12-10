@@ -8,37 +8,50 @@ export function calcWeak(type) {
     .then(data => {
       type.forEach((item, index, array) => {
         // Create Damge img
-        if (array[0] == item) {
-          const createImg = document.createElement("img");
-          createImg.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-          createImg.classList.add("weakness-img");
-          matchup1.before(createImg);
-        }
+        // if (array[0] == item) {
+        //   const createImg = document.createElement("img");
+        //   createImg.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
+        //   createImg.classList.add("weakness-img");
+        //   matchup1.before(createImg);
+        // }
 
-        if (array[1] == item) {
-          const createImg = document.createElement("img");
-          createImg.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
-          createImg.classList.add("weakness-img");
-          matchup2.before(createImg);
-        }
+        // if (array[1] == item) {
+        //   const createImg = document.createElement("img");
+        //   createImg.src = `https://temtem-api.mael.tech/images/icons/types/${item}.png`;
+        //   createImg.classList.add("weakness-img");
+        //   matchup2.before(createImg);
+        // }
 
         for (let types in data) {
           const temtemWeak = data[types];
-          for (let element in temtemWeak) {
-            if ((item == types) & (array[0] == item)) {
-              const createLi = document.createElement("li");
-              matchup1.appendChild(createLi);
-              createLi.classList.add("weakness");
-              createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${element}.png"> <span>${temtemWeak[element]}</span> `;
-            }
-
-            if ((item == types) & (array[1] == item)) {
-              const createLi = document.createElement("li");
-              matchup2.appendChild(createLi);
-              createLi.classList.add("weakness");
-              createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${element}.png"> <span>${temtemWeak[element]}</span> `;
-            }
-          }
+          // for (let element in temtemWeak) {
+          // if ((item == types) & (array[0] == item)) {
+          //   const createLi = document.createElement("li");
+          //   matchup1.appendChild(createLi);
+          //   createLi.classList.add("weakness");
+          //   createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${element}.png"> <span>${temtemWeak[element]}</span> `;
+          //   if (temtemWeak[element] > 1) {
+          //     createLi.style.backgroundColor = "green";
+          //   } else if (temtemWeak[element] == 1) {
+          //     createLi.style.backgroundColor = "white";
+          //   } else {
+          //     createLi.style.backgroundColor = "red";
+          //   }
+          // }
+          // if ((item == types) & (array[1] == item)) {
+          //   const createLi = document.createElement("li");
+          //   matchup2.appendChild(createLi);
+          //   createLi.classList.add("weakness");
+          //   createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${element}.png"> <span>${temtemWeak[element]}</span> `;
+          //   if (temtemWeak[element] > 1) {
+          //     createLi.style.backgroundColor = "green";
+          //   } else if (temtemWeak[element] == 1) {
+          //     createLi.style.backgroundColor = "white";
+          //   } else {
+          //     createLi.style.backgroundColor = "red";
+          //   }
+          // }
+          // }
 
           // if (array[0] == item) {
           //   const createLi = document.createElement("li");
@@ -76,17 +89,17 @@ export function calcWeak(type) {
 
           if (array[1] == item) {
             const createLi = document.createElement("li");
-            weakness2.appendChild(createLi);
+            weakness1.appendChild(createLi);
             createLi.classList.add("weakness");
             createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${types}.png"> <span>${
               temtemWeak[array[0]] * temtemWeak[array[1]]
             }</span> `;
             if (temtemWeak[array[0]] * temtemWeak[array[1]] > 1) {
-              createLi.style.backgroundColor = "red";
+              createLi.style.backgroundColor = "#e94444";
             } else if (temtemWeak[array[0]] * temtemWeak[array[1]] == 1) {
-              createLi.style.backgroundColor = "white";
+              createLi.style.backgroundColor = "#f9f9f9";
             } else {
-              createLi.style.backgroundColor = "green";
+              createLi.style.backgroundColor = "#2cc676";
             }
           }
         }
