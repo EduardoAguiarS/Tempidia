@@ -528,22 +528,26 @@ main {
   -webkit-clip-path: polygon(0 3%, 0 33%, 1.5% 45%, 2% 99%, 53% 97%, 100% 100%, 99.5% 70%, 98% 44%, 99% 1%, 65% 3%, 36% 1%);
 }
 
+.matchups {
+  margin-top: 3rem;
+  margin-left: 48px;
+  margin-right: 48px;
+  background: #e94445;
+  padding: 5rem 0;
+  border-radius: 15px;
+  display: none;
+}
+
+.matchups.active {
+  display: block;
+}
+
 .matchups h2 {
   text-align: center;
   margin-top: 1rem;
 }
 
-.matchups {
-  margin-top: 6rem;
-  margin-left: 48px;
-  margin-right: 48px;
-  background: #e94445;
-  display: block;
-  padding: 5rem 0;
-  border-radius: 15px;
-}
-
-.matchups .damage-content img {
+.matchups .damage-content ul li img {
   width: 30px;
 }
 
@@ -565,12 +569,11 @@ ul#matchup2 {
   margin-top: 1rem;
 }
 
-li.damage1,
-li.damage2 {
+.weakness {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background: #faa34a;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -579,7 +582,14 @@ li.damage2 {
   gap: 0.3rem;
 }
 
-ul#matchup2 {
-  margin-top: 3rem;
+img.weakness-img {
+  width: 3.75rem;
+  display: block;
+  margin: 20px auto;
+}
+
+.weakness span {
+  color: #462f57;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

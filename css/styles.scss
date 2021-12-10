@@ -486,22 +486,27 @@ main {
   );
 }
 
+.matchups {
+  margin-top: 3rem;
+  margin-left: 48px;
+  margin-right: 48px;
+  background: #e94445;
+  padding: 5rem 0;
+  border-radius: 15px;
+
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .matchups h2 {
   text-align: center;
   margin-top: 1rem;
 }
 
-.matchups {
-  margin-top: 6rem;
-  margin-left: 48px;
-  margin-right: 48px;
-  background: #e94445;
-  display: block;
-  padding: 5rem 0;
-  border-radius: 15px;
-}
-
-.matchups .damage-content img {
+.matchups .damage-content ul li img {
   width: 30px;
 }
 
@@ -516,16 +521,22 @@ ul#matchup2 {
   margin-top: 1rem;
 }
 
-li.damage1,
-li.damage2 {
+.weakness {
   display: flex;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background: #faa34a;
   align-items: center;
   border-radius: 5px;
   gap: 0.3rem;
 }
 
-ul#matchup2 {
-  margin-top: 3rem;
+img.weakness-img {
+  width: remCalc(60);
+  display: block;
+  margin: 20px auto;
+}
+
+.weakness span {
+  color: $primaryColor;
+  font-weight: 700;
 }
