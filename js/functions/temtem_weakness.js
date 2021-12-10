@@ -65,24 +65,22 @@ export function calcWeak(type) {
             );
           }
 
-          if (temtemWeak[item] == 2) {
-            if (array[0] == item) {
-              const createLi = document.createElement("li");
-              weakness1.appendChild(createLi);
-              createLi.classList.add("weakness");
-              createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${types}.png"> <span>${
-                temtemWeak[array[index]]
-              }</span> `;
-            }
+          if (array[0] == item) {
+            const createLi = document.createElement("li");
+            weakness1.appendChild(createLi);
+            createLi.classList.add("weakness");
+            createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${types}.png"> <span>${
+              temtemWeak[array[index]]
+            }</span> `;
+          }
 
-            if (array[1] == item) {
-              const createLi = document.createElement("li");
-              weakness2.appendChild(createLi);
-              createLi.classList.add("weakness");
-              createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${types}.png"> <span>${
-                temtemWeak[array[index]]
-              }</span> `;
-            }
+          if (array[1] == item) {
+            const createLi = document.createElement("li");
+            weakness2.appendChild(createLi);
+            createLi.classList.add("weakness");
+            createLi.innerHTML = `<img src="https://temtem-api.mael.tech/images/icons/types/${types}.png"> <span>${
+              temtemWeak[array[index]]
+            }</span> `;
           }
         }
       });
